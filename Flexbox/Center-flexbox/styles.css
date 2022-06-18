@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: -1px 3px 12px 1px #6A6A6A;
+    height: 10%;
+    width: 20%;
+    padding: 30px 60px 50px 30px;
+}
