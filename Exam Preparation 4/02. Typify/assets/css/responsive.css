@@ -1,0 +1,51 @@
+@media (max-width: 600px){
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner h2 {
+        text-align: center;
+        width: unset;
+        margin: auto 1rem;
+        margin-bottom: 10px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: unset;
+        margin-bottom: unset;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: unset;
+    }
+
+    .grid-form .form-control.narrow {
+        width: 100%;
+    }
+
+    .actions input {
+        padding: 0 10em;
+        margin-bottom: unset;
+    }
+}

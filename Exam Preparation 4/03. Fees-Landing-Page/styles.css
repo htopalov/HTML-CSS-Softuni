@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header nav */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+header nav img {
+    width: 10%;
+}
+
+header nav ul {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #54546d;
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+    padding: 10px;
+}
+
+.header-image {
+    padding: 13rem;
+    background: #54546d;
+    position: relative;
+}
+
+.header-image::after {
+    content: url(./images/calculator-icon.svg); /* to add svg as after element */
+    position: absolute;
+    top: 25%;
+    left: -4%;
+}
+
+/* main */
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+}
+
+.courses h3 {
+    color: white;
+    font-size: 35px;
+}
+
+.programs-ul {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.programs {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px; /*fixes the layer belowe the 2 articles (with the price and content) thus box-sahdow can show properly */
+}
+
+li.programs:nth-child(3) {
+    margin-right: 0;
+}
+
+.program-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #54546d;
+}
+
+.program-title p {
+    width: 85%;
+    text-align: center;
+    font-size: 20px;
+    color: #54546d;
+}
+
+/* first with btn */
+
+.program-title.with-btn {
+    width: 100%;
+}
+
+.program-title.with-btn h2 {
+    margin-bottom: 10px;
+}
+
+.program-title.with-btn p {
+    width: 100%;
+    margin-top: 0;
+}
+
+.free.with-btn {
+    text-align: center;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    background: #9a5dc6;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* lowoer part */
+.prices {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.prices .price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.prices p:not(.price) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.prices.with-btn .price {
+    margin-bottom: 10px;
+}
+
+.prices.with-btn {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        90deg,
+        rgba(3, 155, 61, 1) 0%,
+        rgba(39, 184, 94, 1) 50%,
+        rgba(74, 214, 128, 1) 100%
+    );
+}
+
+.left {
+    position: relative;
+}
+
+.left::after {
+    content: "";
+    font-size: large;
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 105%;
+    border-right: 2px solid white;
+    padding: 45px 0;
+}
+.left,
+.right {
+    text-align: center;
+}
+
+.middle,
+.last {
+    padding-top: 3px;
+}
+
+.prices.middle {
+    background: linear-gradient(
+        90deg,
+        rgba(77, 109, 138, 1) 0%,
+        rgba(88, 132, 172, 1) 50%,
+        rgba(98, 155, 207, 1) 100%
+    );
+}
+
+.prices.last {
+    background: linear-gradient(
+        90deg,
+        rgba(76, 57, 167, 1) 0%,
+        rgba(108, 91, 196, 1) 50%,
+        rgba(139, 124, 224, 1) 100%
+    );
+}
+
+div.wrap-courses {
+    /*added so it keeps the next element pushed, since .courses has absolute and moves out of the flow of the document */
+    padding-bottom: 18rem;
+}
+
+/* styling next part of main */
+
+.info-content {
+    margin: 0 200px;
+    margin-bottom: 100px; /*temporary*/
+    color: #54546d;
+}
+
+.info h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.info p {
+    font-size: 22px;
+    margin-bottom: 65px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 
+doesn't work with border-collapse
+td { border: 1px solid black; }
+tr:first-child td:first-child { border-top-left-radius: 10px; }
+tr:first-child td:last-child { border-top-right-radius: 10px; }
+tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; } 
+
+*/
+
+table tr:nth-child(odd) {
+    background: #e6e6e6;
+}
+
+table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+table tr td {
+    padding: 19px 30px;
+    font-size: 23px;
+    color: #565656;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+table tr td:nth-child(2) {
+    padding-right: 125px;
+}
+
+table tr td:nth-child(3) {
+    padding-right: 65px;
+}
+
+/* to make rounded corners in table wth border-collapse */
+
+div.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.check::after {
+    content: "\f00c";
+    color: #12a945;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+}
+
+.cross::after {
+    content: "\f00d";
+    color: #fc4c50;
+    font-weight: bold;
+    font-size: 40px;
+
+    font-family: "Font Awesome 5 Free";
+}
+
+/* styling last part of main */
+
+.postbank-info {
+    margin: 50px 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postbank-content {
+    flex-basis: 90%;
+    margin-right: 75px;
+}
+
+.postbank-content h3 {
+    font-size: 30px;
+    color: #54546d;
+    font-weight: 500;
+}
+
+.postbank-content p {
+    font-size: 22px;
+    color: #565656;
+    line-height: 1.2;
+}
+
+.postbank-content p:first-child {
+    width: 90%;
+}
+
+/* .postbank-content p:last-child {
+    width: 80%;
+} */
+
+.postbank-image {
+    align-self: center;
+}
+
+.postbank-image img {
+    width: 430px;
+}
+
+/* footer */
+footer {
+    background:#54546d;
+    padding:25px;
+}
+
+footer p {
+    text-align: center;
+    color:#908fab;
+    font-size: 22px;
+}
