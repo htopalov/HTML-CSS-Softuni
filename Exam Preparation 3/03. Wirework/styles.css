@@ -1,0 +1,264 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+/* *,
+*::after,
+*::before {
+    box-sizing: border-box;
+} */
+
+html {
+    font-family: "Helvetica", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header-image {
+    background: url(./images/banner.jpg);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    background: #ececec;
+    padding: 10px 40px;
+    margin: 0 1px;
+    display: flex;
+}
+
+header ul li:first-child {
+    background: #e24e2a;
+}
+
+header ul li:first-child a {
+    background: #e24e2a;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    align-self: center;
+    letter-spacing: 1px;
+}
+
+header .header-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .header-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo h1 {
+    font-size: 30px;
+}
+.header-logo::after {
+    content: "";
+    position: absolute;
+    border-right: transparent;
+    left: 53%;
+    top: 25%;
+    background: #b2b2b2;
+    width: 2px;
+    height: 45px;
+}
+.header-logo p {
+    margin: 30px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #2c383b;
+    letter-spacing: 2px;
+}
+
+.header-info-text {
+    padding: 80px 10rem;
+    background: #e24e2a;
+    margin-top: 0;
+}
+
+.header-info-text p {
+    width: 84%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #f2c7bc;
+}
+
+.header-info-text p span.logo {
+    font-weight: bold;
+}
+
+.header-info-text p span:not(.logo) {
+    color: white;
+    text-decoration: underline;
+}
+
+.article-images {
+    background: #383838;
+    padding: 150px;
+    padding-top: 240px;
+    padding-bottom: 90px;
+}
+
+.articles-images ul,
+.article-images ul li h4 {
+    margin-top: 0;
+}
+
+.article-images ul {
+    display: flex;
+}
+
+.article-images ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.article-images ul li p {
+    color: #6c6c6c;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.article-images ul li h4 {
+    color: white;
+    font-size: 23px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.icons ul li::before {
+    padding: 50px;
+    background: orangered;
+    font-size: 50px;
+    bottom: 30%;
+    position: relative;
+}
+
+.icons ul li:nth-child(1)::before {
+    content: "\f084";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: bold;
+}
+
+.icons ul li:nth-child(1)::before {
+    content: "\f084";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: bold;
+}
+
+.icons ul li:nth-child(2)::before {
+    content: "\f516";
+
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: bold;
+}
+
+.icons ul li:nth-child(3)::before {
+    content: "\f13e";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: bold;
+}
+
+.icons ul li:nth-child(4)::before {
+    content: "\f0ad";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: bold;
+}
+
+.article-center {
+    background: white;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-center h2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    color:#555555;
+    font-weight: normal;
+}
+
+
+.article-center p{
+    color:#a2aac1;
+    font-size: 26px;
+    margin-top:0;
+}
+
+.btn {
+    outline:none;
+    border:none;
+    cursor:pointer;
+    background:#1b9772;
+    margin-top:25px;
+    padding: 25px 50px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color:white;
+}
+
+.article-images.no-icons {
+    padding: 150px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.article-images.no-icons h3 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+footer {
+    background:#1b9772;
+
+    padding:100px;
+    
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color:#4cb499;
+}
+
+footer span {
+    color:#a2d4c1;
+}
