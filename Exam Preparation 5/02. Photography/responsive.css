@@ -1,0 +1,13 @@
+@media (max-width: 600px){
+    .thumbnails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnails > div {
+        width: unset;
+        margin-bottom: 30px;
+    }
+}
