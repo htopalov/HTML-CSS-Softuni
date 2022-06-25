@@ -1,0 +1,117 @@
+@media all and (max-width: 468px) {
+    .div-header {
+        display: none;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .options article{
+        text-align: center;
+        width: 50%;
+    }
+
+    .button-header {
+        margin-bottom: unset;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery article {
+        margin-bottom: 15px;
+    }
+
+    .blog-title h4 span {
+        display: none;
+    }
+
+    .blog-title a {
+        display: none;
+    }
+
+    .blog article img{
+        display: none;
+    }
+
+    #about-blog {
+        width: 100%;
+        margin: 25px 15px
+    }
+
+    .blog-title {
+        width: unset;
+    }
+
+    .magazine-title a{
+        display: none;
+    }
+
+    .magazine-title h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .magazine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .magazine article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #magazine-img {
+        border: none;
+        padding-left: unset;
+    }
+
+    .magazine-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: unset;
+    }
+
+    .magazine-info p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .magazine-info h3 {
+        font-size: unset;
+        padding: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons a {
+        margin: 5px;
+    }
+}
