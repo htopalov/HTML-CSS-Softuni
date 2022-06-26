@@ -1,0 +1,200 @@
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+html {
+    font-family: "PT Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header-image {
+    background-image: url(./image/computer-main.jpg);
+    /* background: linear-gradient(#0e0e0e, #cbcbcd);  */
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-top: unset;
+}
+
+.list-item {
+    color: white;
+    cursor: pointer;
+}
+
+.header-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-heading-big {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    padding-top: 70px;
+}
+
+.header-subheading {
+    color: white;
+}
+
+.buy-btn {
+    background-color: #00d08e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+.buy-btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+.action-anchor {
+    color: white;
+    text-decoration: none;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.first-section img {
+    width: 50%;
+}
+
+.first-section ul {
+    list-style: none;
+    margin-right: 100px;
+    padding: unset;
+}
+
+.first-info {
+    margin-right: 150px;
+}
+
+.first-section ul i {
+    margin-right: 15px;
+    background-color: #00d08e;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.first-info ul li {
+    margin: 15px;
+}
+
+.highlighted {
+    font-weight: 600;
+}
+
+.poster {
+    width: 50%;
+}
+
+.second-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-icon {
+    width: 20%;
+}
+
+.icon-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-list {
+    width: 50%;
+}
+
+.second-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-p {
+    color: #00d08e;
+    font-weight: bold;
+}
+
+.icon-list h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.third-section {
+    background-color: #b2f1dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.question-item h3 {
+    text-align: center;
+}
+
+.question-item p {
+    text-align: center;
+}
+
+footer {
+    background-color: #b2f1dd;
+}
+
+.black {
+    font-weight: bold;
+}
+
+.small-container {
+    width: 66%;
+}
